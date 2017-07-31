@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS
+    FOR A PARTICULAR PURPOSE. THIS CODE AND INFORMATION ARE NOT SUPPORTED BY XEBIALABS.
+-->
+<rules xmlns="http://www.xebialabs.com/xl-deploy/xl-rules">
+
+  <rule name="duckcreek.ExecutedDeploymentPackage_CREATE" scope="deployed">
+    <conditions>
+      <type>duckcreek.ExecutedDeploymentPackage</type>
+      <operation>CREATE</operation>
+    </conditions>
+    <planning-script-path>duckcreek/GenerateDeployPlan.py</planning-script-path>
+  </rule>
+
+  <rule name="duckcreek.ExecutedDeploymentPackage_MODIFY" scope="deployed">
+    <conditions>
+      <type>duckcreek.ExecutedDeploymentPackage</type>
+      <operation>MODIFY</operation>
+    </conditions>
+        <planning-script-path>duckcreek/modify_deploy.bat.ftl</planning-script-path>
+  </rule>
+
+  <rule name="duckcreek.ExecutedDeploymentPackage_DESTROY" scope="deployed">
+    <conditions>
+      <type>duckcreek.ExecutedDeploymentPackage</type>
+      <operation>DESTROY</operation>
+    </conditions>
+    <steps>
+      <os-script>
+    <script>duckcreek/destroy_deploy.bat.ftl</script>
+  </os-script>
+  </steps>
+  </rule>
+  
+</rules>

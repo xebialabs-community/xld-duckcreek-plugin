@@ -1,0 +1,1 @@
+invoke-command -scriptblock {iisreset}

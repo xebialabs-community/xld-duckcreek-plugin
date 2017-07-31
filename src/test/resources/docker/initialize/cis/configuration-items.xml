@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xl:export xmlns:xl="http://www.xebialabs.com/xl-export">
+  <xl:metadata>
+    <xl:exported-by>admin</xl:exported-by>
+    <xl:exported-at>2017-07-30T17:39:15.290-0600</xl:exported-at>
+    <xl:exported-format-version>7.0.0</xl:exported-format-version>
+    <xl:encryption-key-fingerprint>f6094d333c0736339884d1fe38d9c54e14019ac9</xl:encryption-key-fingerprint>
+  </xl:metadata>
+  <xl:exported-configuration-items exported-root-id="/">
+    <udm.DeploymentPackage id="Applications/PetClinic-ear/1.0" created-by="admin" created-at="2017-05-24T11:07:19.235-0600" last-modified-by="admin" last-modified-at="2017-05-24T11:07:19.235-0600">
+      <orchestrator />
+      <applicationDependencies />
+      <dependencyResolution>LATEST</dependencyResolution>
+      <undeployDependencies>false</undeployDependencies>
+    </udm.DeploymentPackage>
+    <udm.DeploymentPackage id="Applications/Duck Creek/1.0" created-by="admin" created-at="2017-07-30T15:14:06.315-0600" last-modified-by="admin" last-modified-at="2017-07-30T15:14:06.315-0600">
+      <orchestrator />
+      <applicationDependencies />
+      <dependencyResolution>LATEST</dependencyResolution>
+      <undeployDependencies>false</undeployDependencies>
+    </udm.DeploymentPackage>
+    <duckcreek.Package id="Applications/Duck Creek/1.0/DC3" created-by="admin" created-at="2017-07-30T15:31:06.692-0600" last-modified-by="admin" last-modified-at="2017-07-30T15:31:06.692-0600" file="Applications/Duck Creek/1.0/DC3/DC_FILE2.zip">
+      <tags />
+      <scanPlaceholders>true</scanPlaceholders>
+      <placeholders />
+      <checksum>61f718aaed92964a7b6b49a4cf94d080c2a316d9</checksum>
+      <fileUri>jcr:DC_FILE2.zip</fileUri>
+    </duckcreek.Package>
+    <udm.Application id="Applications/Duck Creek" created-by="admin" created-at="2017-06-08T14:38:46.851-0600" last-modified-by="admin" last-modified-at="2017-07-30T17:37:59.146-0600">
+      <lastVersion>1.0</lastVersion>
+    </udm.Application>
+    <iis.Server id="Infrastructure/Windows_IIS/IIS_DEV" created-by="admin" created-at="2017-07-28T11:32:31.343-0600" last-modified-by="admin" last-modified-at="2017-07-28T11:32:31.343-0600">
+      <tags />
+    </iis.Server>
+    <udm.Environment id="Environments/IIS_DEV" created-by="admin" created-at="2017-07-28T21:54:34.638-0600" last-modified-by="admin" last-modified-at="2017-07-28T21:54:47.507-0600">
+      <members>
+        <ci ref="Infrastructure/Windows_IIS/IIS_DEV" />
+      </members>
+      <dictionaries />
+      <triggers />
+    </udm.Environment>
+    <jee.Ear id="Applications/PetClinic-ear/1.0/PetClinic" created-by="admin" created-at="2017-05-24T11:07:19.269-0600" last-modified-by="admin" last-modified-at="2017-05-24T11:07:19.269-0600" file="Applications/PetClinic-ear/1.0/PetClinic/PetClinic-1.0.ear">
+      <tags />
+      <scanPlaceholders>false</scanPlaceholders>
+      <placeholders />
+      <checksum>96e608b45e844e0f1110b767d320fdafe4be53c6</checksum>
+      <fileUri>jcr:PetClinic-1.0.ear</fileUri>
+    </jee.Ear>
+    <udm.Application id="Applications/PetClinic-ear" created-by="admin" created-at="2017-05-24T11:07:19.234-0600" last-modified-by="admin" last-modified-at="2017-05-24T11:07:19.379-0600">
+      <lastVersion>1.0</lastVersion>
+    </udm.Application>
+    <overthere.CifsHost id="Infrastructure/Windows_IIS" created-by="admin" created-at="2017-07-28T11:03:28.962-0600" last-modified-by="admin" last-modified-at="2017-07-28T11:25:11.462-0600">
+      <tags />
+      <puppetPath>/usr/local/bin</puppetPath>
+      <os>WINDOWS</os>
+      <connectionType>WINRM_INTERNAL</connectionType>
+      <address>192.168.56.123</address>
+      <port>5985</port>
+      <username>vagrant</username>
+      <password>{b64}igltsEeChmolDD6xZCEQww==</password>
+      <winrmEnableHttps>false</winrmEnableHttps>
+      <winrsAllowDelegate>false</winrsAllowDelegate>
+      <pathShareMappings />
+      <cifsPort>445</cifsPort>
+    </overthere.CifsHost>
+  </xl:exported-configuration-items>
+</xl:export>
