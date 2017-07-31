@@ -1,0 +1,13 @@
+language: java
+sudo: false
+deploy:
+  provider: releases
+  file: build/libs/xld-duckcreek-plugin-1.0.0-beta.jar
+  skip_cleanup: true
+  on:
+    all_branches: true
+    tags: true
+    repo: xebialabs-community/xld-duckcreek-plugin
+  api_key:
+    secure:
+      secure: U+kl28h07I7yKQggvpKnBBz4DtrqSQiIAYiOOE7hVqXrftfUKYKyGqFOc2ZI8HGVGW9xAoGvQrSojHPRS1alMPZOhp0t1F5h38r5lFrsV/OfE7vfqZzTxsOQdcQ+gaPeobAkWkS1DIDe34WDrAX5W+mF0PZtR3rJVdN051NImlAYnc6wihmNSD8GExsm5u6NuIVQCMkuM8/wvMBF/c7E5MnVbhUgz3CeTehObAO8Coa+hiBECKIXsEPvJjtBd0GkFkhdoW0QhT/6qWpeBkv0JajHhSgWraJ5t1AQBWV8VL3DSeNyk8GbaHB/VRWesCtqdMllE/+dtLYrW4Iya/iwhtOmm3ftzmvsnPbOkRkrfEvUOysu9BNAxekGG+Fryl1Y3QQya96n679EPdLpqLQJILUixaNCBjUzoYhX7iA0OC1cEBUPMBVehIIrJ+mPrEDLmxttp1B6h9idovHgPoRixaVbAS5p6iyTqzubN9FJ9pPMA5lO2zeC5sC/cUwOkZiWj4QsyAZpITD/TD26/HrfCvDVg89RqPTSkugRK7UpziqvNI+AcuAkxwvvzRgfK/a4fhMeR6X1yZiX47V+XGkvqm2GOhGHg7j5reeA/dBLBLnzOZtMmW8o7AcUYuGrUokBKh4cX+XE15h4F0aIHxjNk5jn9Qn5TPY1LNpg1hMzZWY=
