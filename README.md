@@ -88,6 +88,7 @@ The **copytype** field values can be "full" or "only-files". If value of copytyp
 ## References
 
 [Introduction to the XL Deploy IIS plugin](https://docs.xebialabs.com/xl-deploy/concept/iis-plugin.html)
+
 [IIS Plugin Reference](https://docs.xebialabs.com/xl-deploy-iis-plugin/6.0.x/iisPluginManual.html)
 
 ## TODO
